@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PERFECT PIZZA</h1>
+    <div class="container" x-data="{showCart: true}">
+
+        <div class="header">
+            <div class="a1">
+                <a href="" class="cart-link">
+                    <img src="images/cartpng.jpg" width="30" alt="">
+                    <strong>R0.00</strong>
+                </a>
+            </div>
+        </div>
+
+        <div class="cart-box">
+            <div class="cart" x-show="showCart">
+                <a href="">close</a>
+                <!--<h2>Cart
+                    <img src="images/cartpng.jpg" width="30" alt="">
+                </h2>-->
+                <div class="">
+                    <h2>Cart
+                        <img src="images/cartpng.jpg" width="30" alt="">
+                    </h2>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                Small Pizza
+                            </td>
+                            <td>
+                                <button>+</button>
+                                <button>-</button>
+                            </td>
+                            <td>R0.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Medium Pizza
+                            </td>
+                            <td>
+                                <button>+</button>
+                                <button>-</button>
+                            </td>
+                            <td>R0.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Large Pizza
+                            </td>
+                            <td>
+                                <button>+</button>
+                                <button>-</button>
+                            </td>
+                            <td>R0.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Large Pizza
+                            </td>
+                            <td>
+                                <button>+</button>
+                                <button>-</button>
+                            </td>
+                            <td>R0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>R0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="messege">Message....</div>
+                                <div>
+                                    <label for="">Pay Amount</label>
+                                    <input class="input" type="number" placeholder="Pay Amount">
+                                </div>
+                                <td>
+                                    <button class="btn">
+                                        <img src="images/cartpng.jpg" width="20" alt="">Buy
+                                    </button>
+                                </td>
+                            </td>
+                        </tr>
+                    </table>
+    
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+
+        <div class="Pizzas">
+     
+            <div>
+                <div class="Small_pizza">
+                    <div class="display">
+                        <div class="a2">
+                            <h2>Small Pizza
+                                <div>R49.00</div>
+                            </h2>
+                        </div>
+                        <div class="a2">
+                            <button class="btn">
+                               Buy
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/firstpic.png" alt="">
+                    By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you might as well call us amabhoza of this delivery game. 
+                </div>
+            </div>
+
+            <div>
+                <div class="Medium_pizza">
+                    <div class="display">
+                        <div class="a2">
+                            <h2>Medium Pizza
+                                <div>R89.00</div>
+                            </h2>
+                        </div>
+                        <div class="a2">
+                            <button class="btn">
+                               Buy
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/forthpic.png" alt="">
+                    By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you might as well call us amabhoza of this delivery game. 
+                </div>
+            </div>
+
+            <div>
+                <div class="Large_pizza">
+                    <div class="display">
+                        <div class="a2">
+                            <h2>Large Pizza
+                                <div>R129.00</div>
+                            </h2>
+                        </div>
+                        <div class="a2">
+                            <button class="btn">
+                               Buy
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <img src="images/thirdpic.png" alt="">
+                    By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you might as well call us amabhoza of this delivery game. 
+                </div>
+            </div>
+
+            <div>
+                <div class="Larged_pizza">
+                    <div class="display">
+                        <div class="a2">
+                            <h2>Large Pizza
+                                <div>R149.00</div>
+                            </h2>
+                        </div>
+                        <div class="a2">
+                            <button class="btn">
+                               Buy
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <img src="images/secpic.png" alt="" width="280" height="260">
+                    By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you might as well call us amabhoza of this delivery game. 
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+
+        <h3> 
+            <div>
+                Contact Details
+            </div>
+            <div>
+                contact us at:011 342 3637 
+            </div>
+            <div>
+                email: info@perfectPizza.co.za
+            </div>
+        </h3>
+
+    </div>
+    
+</body>
+</html>
