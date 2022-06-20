@@ -50,6 +50,15 @@ th, td{
     margin: 1em;
     padding: 1em;
 }
+.aa{
+    margin-left: 50%;
+    display: flex;
+}
+h2{
+    font-size: medium;
+    font-style: italic;
+    color: black solid;
+}
 .btn{
     background-color: green;
     font-size: large;
@@ -57,6 +66,21 @@ th, td{
     width: 65px;
     border-radius: 0.3em;
 }
+.btn1{
+    color: green;
+    background-color: azure;
+    width: 85px;
+    border-radius: 0.3em;
+}
+.btn2{
+    color: red;
+    background-color: azure;
+    width: 85px;
+    border-radius: 0.3em;
+}
+/*a{
+    color: red;
+}*/
 .messege{
     background-color: black;
     color: white;

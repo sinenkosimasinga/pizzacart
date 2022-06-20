@@ -13,73 +13,85 @@
 </head>
 <body>
     <h1>PERFECT PIZZA</h1>
-    <div class="container" x-data="{showCart: true}">
+    <div class="container" x-data="{showCart: false, SmallPizzaTot: 0.00, SpizzaQty:0, MediumPizzaTot: 0.00, 
+        mpizzaQty:0, LargePizzaTot: 0.00, lpizzaQty:0, LargePizzasTot: 0.00, lspizzaQty:0, cartTot: 0.00}">
 
         <div class="header">
             <div class="a1">
-                <a href="" class="cart-link">
-                    <img src="images/cartpng.jpg" width="30" alt="">
+                <!--<a href="" class="cart-link" x-on:click="showCart=true">-->
+                    <button class="btn1" x-on:click="showCart=true">
+                        <img src="images/cartpng.jpg" width="30" alt="">Shop Cart </button>
                     <strong>R0.00</strong>
-                </a>
+                <!--</a>-->
             </div>
         </div>
 
         <div class="cart-box">
             <div class="cart" x-show="showCart">
-                <a href="">close</a>
+                <button class="btn2" x-on:click="showCart=false">
+                    <img src="images/cartpng.jpg" width="30" alt="">Close Cart </button>
                 <!--<h2>Cart
                     <img src="images/cartpng.jpg" width="30" alt="">
-                </h2>-->
+                </h2>
                 <div class="">
                     <h2>Cart
                         <img src="images/cartpng.jpg" width="30" alt="">
                     </h2>
-                </div>
+                </div>-->
                 <div>
                     <table>
+                        <tr> <td colspan="3">
+                            <div class="aa">
+                                <h2>Cart</h2> <img src="images/cartpng.jpg" width="30" alt="">
+                            </div>
+                            </td></tr>
                         <tr>
                             <td>
                                 Small Pizza
                             </td>
                             <td>
+                                <span x-text="SpizzaQty"></span>
                                 <button>+</button>
                                 <button>-</button>
                             </td>
-                            <td>R0.00</td>
+                            <td x-text="SmallPizzaTot"></td>
                         </tr>
                         <tr>
                             <td>
                                 Medium Pizza
                             </td>
                             <td>
+                                <span x-text="mpizzaQty"></span>
                                 <button>+</button>
                                 <button>-</button>
                             </td>
-                            <td>R0.00</td>
+                            <td x-text="MediumPizzaTot"></td>
                         </tr>
                         <tr>
                             <td>
                                 Large Pizza
                             </td>
                             <td>
+                                <span x-text="lpizzaQty"></span>
                                 <button>+</button>
                                 <button>-</button>
                             </td>
-                            <td>R0.00</td>
+                            <td x-text="LargePizzaTot"></td>
                         </tr>
                         <tr>
                             <td>
-                                Large Pizza
+                                Large Pizza (exter chees)
                             </td>
                             <td>
+                                <span x-text="lspizzaQty"></span>
                                 <button>+</button>
                                 <button>-</button>
                             </td>
-                            <td>R0.00</td>
+                            <td x-text="LargePizzasTot"></td>
                         </tr>
                         <tr>
                             <td colspan="2">Total</td>
-                            <td>R0.00</td>
+                            <td x-text="cartTot"></td>
                         </tr>
                         <tr>
                             <td colspan="2">
@@ -100,8 +112,6 @@
                 </div>
             </div>
             
-            
-            
         </div>
 
 
@@ -116,9 +126,7 @@
                             </h2>
                         </div>
                         <div class="a2">
-                            <button class="btn">
-                               Buy
-                            </button>
+                            <button class="btn" x-on:click="SmallPizzaTot += 49.00 ; SpizzaQty +=1">Buy</button>
                         </div>
                     </div>
                     <img src="images/firstpic.png" alt="">
@@ -135,9 +143,8 @@
                             </h2>
                         </div>
                         <div class="a2">
-                            <button class="btn">
-                               Buy
-                            </button>
+                            <button class="btn" x-on:click="MediumPizzaTot += 89.00 ; mpizzaQty +=1">
+                                Buy</button>
                         </div>
                     </div>
                     <img src="images/forthpic.png" alt="">
@@ -154,9 +161,7 @@
                             </h2>
                         </div>
                         <div class="a2">
-                            <button class="btn">
-                               Buy
-                            </button>
+                            <button class="btn" x-on:click="LargePizzaTot += 129.00 ; lpizzaQty +=1">Buy</button>
                         </div>
                     </div>
                     
@@ -169,14 +174,12 @@
                 <div class="Larged_pizza">
                     <div class="display">
                         <div class="a2">
-                            <h2>Large Pizza
+                            <h2>Large Pizza (extra chees)
                                 <div>R149.00</div>
                             </h2>
                         </div>
                         <div class="a2">
-                            <button class="btn">
-                               Buy
-                            </button>
+                            <button class="btn" x-on:click="LargePizzasTot += 129.00; lspizzaQty +=1">Buy</button>
                         </div>
                     </div>
                     
