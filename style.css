@@ -61,6 +61,7 @@ h2{
 }
 .btn{
     background-color: green;
+    margin: 1em;
     font-size: large;
     font-style: italic;
     width: 65px;
@@ -118,12 +119,19 @@ h2{
     border-radius: 1em;
     background-color: grey;
 }
-@media (min-width: 600px) {
+.b1{
+    margin: 1em;
+    padding: 1em;
+}
+@media (min-width: 900px) {
     .Pizzas{
     display: flex;
     padding: 1em;
     margin: 1em;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
+    }
+    .b1{
+        display: flex;
     }
     
 }
