@@ -70,9 +70,30 @@
             }
             else if(this.paymentAmount >= this.cartTot()){
                 this.paymentMessege = 'Enjoy your pizzas!'
+                setTimeout(() => {
+                    this.payNow=false;
+                    this.showCart=false;
+                    this.clearCart() 
+                }, 5000);
+
             }else{
                 this.paymentMessege = 'Sorry - that is not enough money!'
+                setTimeout(() => {
+                    this.payNow=false;
+                    this.showCart=false;
+                    this.clearCart() 
+                }, 5000);
             }
+        },
+        clearCart(){
+            this.SmallPizzaTot= 0.00;
+            this.SpizzaQty=0; 
+            this.MediumPizzaTot= 0.00; 
+            this.mpizzaQty=0; 
+            this.LargePizzaTot= 0.00; 
+            this.lpizzaQty=0; 
+            this.LargePizzasTot= 0.00; 
+            this.lspizzaQty=0;
         }
     }">
 
@@ -147,7 +168,7 @@
                                 R<span x-text="LargePizzaTot.toFixed(2)"></span>
                             </td>
                         </tr>
-                        <tr x-show="lspizzaQty>0">
+                        <!--<tr x-show="lspizzaQty>0">
                             <td>
                                 Large Pizza (extra chees)
                             </td>
@@ -159,7 +180,7 @@
                             <td>
                                 R<span x-text="LargePizzasTot.toFixed(2)"></span>
                             </td>
-                        </tr>
+                        </tr>-->
                         <tr>
                             <td colspan="2">Total</td>
                             <td>
@@ -253,7 +274,7 @@
                 </div>
             </div>
 
-            <div>
+            <!--<div>
                 <div class="Larged_pizza">
                     <div class="display">
                         <div class="a2">
@@ -269,7 +290,7 @@
                     <img src="images/secpic.png" alt="" width="280" height="260">
                     By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you might as well call us amabhoza of this delivery game. 
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </div>
