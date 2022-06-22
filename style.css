@@ -128,6 +128,7 @@ h2{
     display: flex;
     padding: 1em;
     margin: 1em;
+    width: 100%;
     /*max-width: fit-content;*/
     }
     .b1{

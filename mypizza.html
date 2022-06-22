@@ -68,10 +68,10 @@
             if(!this.paymentAmount){
                 this.paymentMessege = 'No amount entered!'
             }
-            if(this.paymentAmount >= this.cartTot()){
-                this.paymentMessege = 'payment succesful!'
+            else if(this.paymentAmount >= this.cartTot()){
+                this.paymentMessege = 'Enjoy your pizzas!'
             }else{
-                this.paymentMessege = 'payment failed!'
+                this.paymentMessege = 'Sorry - that is not enough money!'
             }
         }
     }">
